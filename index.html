@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>バーチャルバナナ ゲーム屋台</title>
-<meta name="description" content="バーチャルバナナが作ったスマホ向けブラウザゲーム5本。インストール不要、タップですぐ遊べます。">
+<meta name="description" content="バーチャルバナナが作ったスマホ向けブラウザゲーム7本とべんりツール。インストール不要、タップですぐ遊べます。">
 <meta property="og:title" content="バーチャルバナナ ゲーム屋台">
-<meta property="og:description" content="スマホですぐ遊べるブラウザゲーム5本">
+<meta property="og:description" content="スマホですぐ遊べるブラウザゲーム7本">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,6 +53,13 @@ h1 span{display:block}
 .lead{margin:16px auto 0;max-width:22em;font-size:15px}
 
 /* cards */
+.sec{
+  font-family:var(--head);font-weight:400;font-size:20px;margin:0 0 20px;
+  display:flex;align-items:center;gap:10px;
+}
+.sec::after{content:"";flex:1;height:3px;background:var(--ink);border-radius:2px}
+.sec.tool{margin-top:44px}
+
 .list{display:grid;gap:18px;margin:0;padding:0;list-style:none}
 .card{
   position:relative;display:block;color:var(--ink);text-decoration:none;
@@ -103,10 +110,27 @@ footer p{margin:4px 0}
   <header>
     <span class="peel" aria-hidden="true">🍌</span>
     <h1><span>バーチャルバナナ</span><span>ゲーム屋台</span></h1>
-    <p class="lead">スマホですぐ遊べるブラウザゲームが5本。インストール不要、タップして始めよう。</p>
+    <p class="lead">スマホですぐ遊べるブラウザゲーム7本と、べんりツール。インストール不要、タップして始めよう。</p>
   </header>
 
+  <h2 class="sec">ゲーム</h2>
   <ul class="list">
+    <li style="display:contents">
+      <a class="card" style="--c:#B9E86B" href="https://virtualbanana877.github.io/VmonkeyBanana/">
+        <span class="icon" aria-hidden="true">🐵</span>
+        <h2>おサルのバーチャルバナナ集め</h2>
+        <p>おサルを走らせて、60秒でバナナを集めまくろう。連続で取るとコンボ、金のバナナは+30点で加速、腐りかけは減点で減速。残り時間が減ると画面が赤く染まっていく。</p>
+        <div class="foot"><div class="tags"><b>スマホ操作</b><b>60秒</b><b>コンボ</b></div><span class="go">あそぶ</span></div>
+      </a>
+    </li>
+    <li style="display:contents">
+      <a class="card" style="--c:#C9A7FF" href="https://virtualbanana877.github.io/DrawingVBananaTower/">
+        <span class="icon" aria-hidden="true">🗼</span>
+        <h2>グニャグニャお絵かきバーチャルのバナナタワー</h2>
+        <p>まず指でバナナを1本描こう。そのぐにゃぐにゃのバナナを上から積んで、どこまで高く積めるか挑戦。描いた形で積み方が変わる。崩れたら終わり。</p>
+        <div class="foot"><div class="tags"><b>お絵かき</b><b>積み上げ</b><b>物理</b></div><span class="go">あそぶ</span></div>
+      </a>
+    </li>
     <li class="card-item" style="display:contents">
       <a class="card" style="--c:var(--pink)" href="https://virtualbanana877.github.io/VirtualChocolateBanana/">
         <span class="icon" aria-hidden="true">🍫</span>
@@ -145,6 +169,18 @@ footer p{margin:4px 0}
         <h2>うどん気持ちいいゲーム</h2>
         <p>カバがうどんを食べる、気持ちいい瞬間はたった0.5秒。ここぞのタイミングでボタンを押そう。名前と好きなものを入れて結果をポスト。</p>
         <div class="foot"><div class="tags"><b>タイミング</b><b>1ボタン</b></div><span class="go">あそぶ</span></div>
+      </a>
+    </li>
+  </ul>
+
+  <h2 class="sec tool">べんりツール</h2>
+  <ul class="list">
+    <li style="display:contents">
+      <a class="card" style="--c:#fff" href="https://virtualbanana877.github.io/ImageSegmentation/">
+        <span class="icon" aria-hidden="true">✂️</span>
+        <h2>X用 画像20分割ツール</h2>
+        <p>画像を選ぶと、横に20枚へ自動で分割。Xの20枚投稿にぴったりのサイズで、ZIPにまとめて保存できる。スマホでも使える。</p>
+        <div class="foot"><div class="tags"><b>画像</b><b>20分割</b><b>ZIP保存</b></div><span class="go">つかう</span></div>
       </a>
     </li>
   </ul>
